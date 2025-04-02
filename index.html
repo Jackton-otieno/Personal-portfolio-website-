@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackton's portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="loader-content">
+                <div class="loader-circle"></div>
+                <div class="loader-text">Loading...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Jackton Otieno</div>
+        <ul>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <video autoplay muted loop id="header-video">
+            <source src="other\ec8c554fd5639e79656d29458b1f42cb.mp4" type="video/mp4">
+            <!-- Fallback text if video doesn't load -->
+            Your browser does not support the video tag.
+        </video>
+        <div class="header-content">
+            <h1>Jackton Otieno</h1>
+            <div class="title-slideshow">
+                <p class="slide active">Software Developer</p>
+                <p class="slide">Web Developer</p>
+                <p class="slide">Gamer</p>
+                <p class="slide">Tech Enthusiast</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Programming Languages -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-list">
+            <span>Python</span>
+            <span>JavaScript</span>
+            <span>HTML5/CSS3</span>
+            
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p class="typing-text">I'm a Computer Science student at the University of Nairobi and a self-taught web developer. I'm still learning and exploring software development, but I enjoy building things and solving problems with code. I love the challenge of making applications that are useful and easy to use. I'm always looking for ways to improve and grow as a developer.</p>
+    </section>
+
+    <!-- Educational Background -->
+    <section id="education">
+        <h2>Education</h2>
+        <p class="typing-text"><strong>Bachelor of Science in Computer Science</strong><br>The University of Nairobi, 2023 – ongoing </p>
+        <a href="other\cv\Cv1.docx" download class="btn">Download CV</a>
+    </section>
+
+    <!-- Interests -->
+    <section id="interests">
+        <h2>Professional Interests</h2>
+        <p class="typing-text">I am passionate about Artificial Intelligence, Software Engineering, and Gaming, with a keen interest in how these fields intersect to create innovative solutions. I enjoy exploring AI-driven technologies, from machine learning models to game AI, and how they enhance user experiences. My focus in software engineering is on building scalable, efficient applications that solve real-world problems. Additionally, my enthusiasm for gaming extends beyond playing—I am fascinated by game development, AI-driven game mechanics, and the overall design of interactive digital experiences. I am eager to keep learning and contribute to advancements in these exciting fields.</p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Selected Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <h3>Project 1: Chiromo Campus  Navigation System (In Progress)</h3>
+                <p class="typing-text">A web-based interactive map designed to help students and visitors navigate the University of Nairobi's Chiromo Campus. It provides real-time guidance to lecture halls, buildings, and key locations within the campus.
+
+                    Technologies Used: HTML, CSS, JavaScript, Leaflet.js, OpenStreetMap.</p>
+                <a href="https://github.com/Jackton-otieno/My-project-1.git" target="_blank" class="btn">View on GitHub</a>
+            </div>
+            <div class="project">
+                <h3>Project 2:Personal Portfolio</h3>
+                <p class="typing-text">Designed and deployed a responsive personal portfolio website to showcase my skills, projects, and experience. Built using HTML, CSS, and JavaScript, the website provides a clean and user-friendly interface. The project highlights my proficiency in front-end development and my ability to create visually appealing and functional web applications.</p>
+                <a href="https://yourwebsite.com" target="_blank" class="btn">Live Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-details">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:odongojacktonb@gmail.com">odongojacktonb@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+254700000000">+254 799 966 722</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Nairobi, Kenya</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <h3>Connect With Me</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/Jackton-otieno" target="_blank" class="social-item">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jackton-otieno-867336305/" target="_blank" class="social-item">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://x.com/home" target="_blank" class="social-item">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Jackton Otieno . All Rights Reserved.</p>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/254799966722" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-text">Chat with me</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
