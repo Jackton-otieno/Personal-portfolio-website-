@@ -126,10 +126,53 @@ function initTypingAnimation() {
     window.addEventListener('scroll', handleScroll);
 }
 
+// Navigation bar scroll effect
+function initNavScroll() {
+    const nav = document.querySelector('nav');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    });
+}
+
+// Menu Toggle functionality
+function initMenuToggle() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+            navMenu.classList.remove('active');
+            menuToggle.classList.remove('active');
+        }
+    });
+
+    // Close menu when clicking a link
+    const navLinks = document.querySelectorAll('.nav-menu a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            menuToggle.classList.remove('active');
+        });
+    });
+}
+
 // Initialize all animations and functionality when the page loads
 document.addEventListener('DOMContentLoaded', () => {
     initLoader();
     initTitleSlideshow();
     initTypingAnimation();
     initContactForm();
+    initNavScroll();
+    initMenuToggle();
 }); 
