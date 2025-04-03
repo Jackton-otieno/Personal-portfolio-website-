@@ -32,7 +32,7 @@ nav {
     align-items: center;
     padding: 1rem 2rem;
     z-index: 1000;
-    height: 60px;
+    height: 100px;
     transition: background 0.3s ease;
     backdrop-filter: blur(10px);
 }
@@ -246,12 +246,13 @@ nav ul li a:hover {
 }
 
 .header-content h1 {
-    font-size: 4.5rem;
-    font-weight: 700;
+    font-size: 3.0rem;
+    font-weight: 650;
     margin-bottom: 2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     letter-spacing: 2px;
     color: #ffffff;
+    margin-top: 4rem;
 }
 
 .header-profile {
@@ -864,7 +865,7 @@ html, body {
     }
 
     .social-icons {
-        gap: 0.8rem;
+        gap: 1.5rem;
         justify-content: center;
     }
 
