@@ -406,6 +406,8 @@ footer {
     width: 100%;
     max-width: 400px;
     z-index: 3;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
 }
 
 .title-slideshow .slide {
@@ -415,7 +417,6 @@ footer {
     transition: all 0.5s ease-in-out;
     font-size: 2rem;
     font-weight: 500;
-    color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     letter-spacing: 1px;
     left: 0;
@@ -425,8 +426,33 @@ footer {
     transform: translateY(-50%);
 }
 
+/* Software Developer - Blue theme */
+.title-slideshow .slide:nth-child(1) {
+    color: #4FC3F7;
+    text-shadow: 0 0 10px rgba(79, 195, 247, 0.5);
+}
+
+/* Web Developer - Green theme */
+.title-slideshow .slide:nth-child(2) {
+    color: #81C784;
+    text-shadow: 0 0 10px rgba(129, 199, 132, 0.5);
+}
+
+/* Gamer - Purple theme */
+.title-slideshow .slide:nth-child(3) {
+    color: #B388FF;
+    text-shadow: 0 0 10px rgba(179, 136, 255, 0.5);
+}
+
+/* Tech Enthusiast - Gold theme */
+.title-slideshow .slide:nth-child(4) {
+    color: #FFD700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
 .title-slideshow .slide.active {
     opacity: 1;
+    transform: translateY(-50%) scale(1.05);
 }
 
 .contact-container {
